@@ -14,7 +14,7 @@ import Herencia.Animal;
 public class TestCadenas {
 
     public static void main(String[] args) {
-        Animal a = new Animal();
+//        Animal a = new Animal();
         String saludo  = new String("hola mundo");
         String saludo2  = new String("hola mundo");
         

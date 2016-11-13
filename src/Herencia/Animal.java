@@ -5,15 +5,18 @@
  */
 package Herencia;
 
+import Herencia.Movimientos;
+
 /**
  *
  * @author pablo temporal
  */
-public class Animal {
+public abstract  class Animal implements Movimientos {
 
     private String tipo;
     private String raza;
     private boolean vuela;
+    private String nombre;
 
     public String getTipo() {
         return tipo;
@@ -44,12 +47,21 @@ public class Animal {
         return "Animal{" + "tipo=" + tipo + ", raza=" + raza + ", vuela=" + vuela + '}';
     }
 
-    public void caminar() {
-        System.out.println("Caminando en tierra");
-    }
-    
-    public void saludar(){
+    public void saludar() {
         System.out.println("saludando");
+    }
+
+    @Override
+    public void movimiento() {
+        System.out.println("Caminando 4 patas");
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
 }

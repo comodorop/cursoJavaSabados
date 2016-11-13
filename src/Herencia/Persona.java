@@ -9,7 +9,7 @@ package Herencia;
  *
  * @author pablo temporal
  */
-public class Persona {
+public class Persona implements Movimientos{
 
     private String nombre;
     private double peso;
@@ -47,6 +47,11 @@ public class Persona {
     @Override
     public String toString() {
         return "Persona{" + "nombre=" + nombre + ", peso=" + peso + ", estatura=" + estatura + '}';
+    }
+
+    @Override
+    public void movimiento() {
+        System.out.println("Caminando 2 pies");
     }
 
 }

@@ -7,18 +7,8 @@ package Herencia;
 
 /**
  *
- * @author pablo temporal
+ * @author PabloJavier
  */
-public class Pez extends Animal{
-    
-  @Override
-  public void movimiento(){
-      System.out.println("Nadando");
-  }
-  public void nombrarPez(){
-  this.setNombre("Nemo");
-  }
-  
-  
-    
+public interface Movimientos {
+    public void movimiento();
 }

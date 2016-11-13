@@ -21,7 +21,7 @@ public class TestHerencia {
 //        Perro perro = new Perro();
 //        perro.mover();
 
-        Peces p = new Peces();
-        p.mover();
+//        Peces p = new Peces();
+//        p.mover();
     }
 }
